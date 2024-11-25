@@ -1,0 +1,307 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Modern sans-serif font */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* This will space the container elements */
+    align-items: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700; /* Bold title */
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    width: 100%; /* Make the list take the full width */
+    justify-content: space-evenly; /* Evenly spaces the links */
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    text-align: center; /* Center-align the links */
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ff6347;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Section */
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-section h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600; /* Semi-bold for subtitles */
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555; /* Slightly lighter text color */
+}
+
+/* Contact Section */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 700; /* Bold for labels */
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+}
+
+button {
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700; /* Bold button text */
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.projects-section {
+    background: #ffffff; /* White background for a clean look */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #444; /* Darker shade for the title */
+}
+
+.projects-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.skill-card {
+    background: #f4f4f4; /* Light gray card background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Modern sans-serif font */
+    line-height: 1.6;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Light blue to white gradient */
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Ensure sections remain visually distinct */
+main section {
+    background: transparent; /* Transparent to allow the gradient to show */
+    padding: 20px;
+}
+
+/* Ensure body and HTML fill the entire height of the browser */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adjust main to also take full height */
+main {
+    min-height: 100vh; /* Ensures main content fills at least the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    width: 100%;
+    background: #ffffff; /* White form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Dark gray labels */
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Subtle gray border */
+    border-radius: 4px;
+    background: #f9f9f9; /* Light gray background */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Focus Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.4); /* Blue glow effect */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 15px;
+    background: #007bff; /* Vibrant blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
